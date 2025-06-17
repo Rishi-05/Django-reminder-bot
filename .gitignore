@@ -79,3 +79,8 @@ pylint-global.rc
 # Coverage reports
 .coverage
 coverage.xml
+
+# Ignore .env files
+.env
+# But don't ignore .env.example
+!.env.example
