@@ -1,5 +1,10 @@
 import os
 import django
+
+# ✅ Set DJANGO_SETTINGS_MODULE and setup Django BEFORE importing any models
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+django.setup()
+
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 from telegram.ext import CallbackContext
