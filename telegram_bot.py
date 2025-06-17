@@ -28,16 +28,13 @@ def start(update: Update, context: CallbackContext):
 
 
 def main():
-<<<<<<< HEAD
     from django.conf import settings
     TELEGRAM_TOKEN = 'Replace with your bot token'  
-=======
     TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")  # Ideally from .env
     if not TELEGRAM_TOKEN:
         # fallback for local testing
-        TELEGRAM_TOKEN = "7201227079:AAEgtCIG-1EJoQMmOKsC0dcwC_W6qyZa7eE"  # 🛑 Don’t hardcode this in public repos
+        TELEGRAM_TOKEN = "Replace with your bot token"  # 🛑 Don’t hardcode this in public repos
 
->>>>>>> 5318239 (Your commit message)
     updater = Updater(TELEGRAM_TOKEN, use_context=True)
     dp = updater.dispatcher
 
