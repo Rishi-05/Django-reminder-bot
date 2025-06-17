@@ -117,3 +117,10 @@ Rename `.env.example` to `.env` and fill in your actual credentials:
 ```bash
 cp .env.example .env
 ```
+### 13. Static Files
+
+This project uses Django’s collectstatic mechanism to gather all static assets.
+```
+python manage.py collectstatic
+```
+After running this all the files are copied in the staticfiles folder. Because of this the Django rest-framework can use the CSS on the browser.
