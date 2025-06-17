@@ -6,6 +6,9 @@ from telegram.ext import CallbackContext
 from core.models import TelegramUser
 from django.db.utils import IntegrityError
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")  # adjust if your settings module is different
+django.setup()
+
 def start(update: Update, context: CallbackContext):
     user = update.effective_user
     username = user.username
