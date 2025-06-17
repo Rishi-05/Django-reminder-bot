@@ -24,8 +24,7 @@ def start(update: Update, context: CallbackContext):
 
 def main():
     from django.conf import settings
-    TELEGRAM_TOKEN = '7201227079:AAEgtCIG-1EJoQMmOKsC0dcwC_W6qyZa7eE'  # Replace with your bot token
-
+    TELEGRAM_TOKEN = 'Replace with your bot token'  
     updater = Updater(TELEGRAM_TOKEN, use_context=True)
     dp = updater.dispatcher
 
