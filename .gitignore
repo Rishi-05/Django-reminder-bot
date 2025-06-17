@@ -14,7 +14,7 @@ env/
 # Environment variables and secret files
 .env
 *.env
-.env.*
+.env.example
 
 # Django stuff
 *.sqlite3
