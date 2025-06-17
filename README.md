@@ -109,3 +109,11 @@ POST	/api/accounts/login/	    Obtain JWT token
 GET	/api/core/secret/	    Protected view (requires token)
 POST	/api/token/refresh/	    Refresh JWT token
 ```
+
+### 12. Environment Variables
+
+Rename `.env.example` to `.env` and fill in your actual credentials:
+
+```bash
+cp .env.example .env
+```
